@@ -1,0 +1,841 @@
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+   *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  
+  @font-face {
+    font-family: "Turnpike";
+    src: url("fonts/Turnpike.ttf");
+    }
+  
+  html,body{ 
+      width:100%;
+      height:100%;
+      background: #213436;
+   
+  }
+  
+
+     /* ----Progress Bar styling----- */
+     .bar-container{
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      height: 0.2rem;
+      background: black;
+      top:0;
+      z-index: 5;
+  }
+  
+  .percent {
+      position: absolute;
+      background: transparent;
+      height: 0.2rem;
+      width: 100%;
+      
+  }
+
+
+.fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #FADD00;
+  transition: background 0.15s ease;
+}
+
+
+/* ---- top-section ---- */
+
+
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+     width: 100%;
+     height: 100vh;
+     background: #213436;
+   }
+
+   
+   
+/*------- Logo styles-------- */
+
+/* ----LM icon----- */
+
+.lm-logo{
+    background: transparent;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    
+    
+  }
+  
+  .lm-logo img{
+  height: 1.2rem;
+  width: 2rem;
+  /* background: black; */
+  margin-left: 1rem;
+  
+  }
+  
+  
+  /* ---------Oct logo--------- */
+  
+  .main-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: absolute;
+    top:0;
+    margin-top: 5rem;
+    transition: 1s;
+    opacity: 0;
+  }
+  
+  .logo-right-side h3{
+    font-size: 3rem;
+    color: white;
+    font-family:"Montserrat";
+    font-weight: 800;
+    line-height: 3.2rem;
+    margin-left: 0.5rem;
+  }
+  
+  .red-line{
+    width: 0.3rem;
+    background: #BF4242;
+    height: 5.5rem;
+  }
+  
+  .october-text{
+    letter-spacing: 0.4rem;
+  }
+  
+  .crises-text{
+    letter-spacing: 1.5rem;
+    }
+  
+  
+  .logo-left-side h1{
+    font-size: 1.4rem;
+    color: white;
+    font-family:"Montserrat";
+    line-height: 2.2rem;
+    margin-right: 0.5rem;
+   
+  }
+  
+  
+  
+  /* -------Heading styles------- */
+  
+   .text-container{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: absolute;
+  } 
+  
+  .text-container h2 {
+    width: 50%;
+    font-size: 2rem;
+    color: white;
+    font-family:"Turnpike";
+    line-height: 3rem;
+    text-align: center;
+    transition: 1s;
+  }
+  
+  
+     /* ------Author styles ------*/
+  
+     .author-name{
+       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 22rem;
+      position: absolute;
+      
+    }
+  
+     .author-name p{
+      font-family: "georgia";
+      color: white;
+      line-height: 2.4rem;
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      font-style: italic;
+    }
+  
+    
+  
+    .separator{
+      margin-top: 0rem;
+      width: 5rem;
+      height: 0.4rem;
+      background: #BF4242;
+      
+    }
+  
+  
+  
+  
+    /*---------animated arrows styling------*/
+  
+  .arrows{
+    position: absolute;
+    margin-top: 30rem;
+  }
+  
+    .animated-arrows{
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      z-index: 0;
+      margin-bottom: 2rem;
+      
+    }
+    
+    
+    
+    .animated-arrows span {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb07 2s infinite;
+      animation: sdb07 2s infinite;
+      opacity: 0;
+      box-sizing: border-box;
+    }
+    .animated-arrows  span:nth-of-type(1) {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+    .animated-arrows  span:nth-of-type(2) {
+      top: 16px;
+      -webkit-animation-delay: .15s;
+      animation-delay: .15s;
+    }
+    .animated-arrows  span:nth-of-type(3) {
+      top: 32px;
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s;
+    }
+    
+    @-webkit-keyframes sdb07 {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @keyframes sdb07 {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  
+    .animated-arrows-black span {
+      border-left: 2px solid #000;
+      border-bottom: 2px solid #000;
+  
+    }
+    
+  /* ----End of arrows styling----- */
+
+
+
+.f2f-section-1{
+    width:100%;
+    height: auto;
+    background-image: url("images/bg-1.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.f2f-section-2{
+  width:100%;
+  height: auto;
+  background-image: url("images/bg-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author-1-wrapper, .author-2-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.author-1-wrapper p, .author-2-wrapper p{
+    font-family: "georgia";
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    
+}
+
+.author-1-wrapper h2, .author-2-wrapper h2{
+    font-family: "Turnpike";
+    color: white;
+}
+
+.author-1-blockquote, .author-2-blockquote{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 7rem;
+}
+
+.author-1-blockquote h2, .author-2-blockquote h2{
+    font-family: "Turnpike";
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+   
+}
+
+.author-1-text, .author-2-text{
+    width: 50%;
+    text-align: left;
+}
+
+.author-1-text p, .author-2-text p{
+   font-family: "georgia";
+   font-size: 1.3rem;
+   line-height: 2.5rem;
+   color: white;
+   
+   
+}
+
+.drop-cap{
+    float:left;
+    font-size: 6rem;
+    line-height:4rem;
+    padding-right:.25rem;
+    margin-left: -.9rem; 
+    font-family: "georgia";
+    font-style: normal;
+    font-weight: 100;
+    color: #BF4242;
+    margin-left: 0.1rem;
+
+}
+
+#aboutauthor{
+  font-family: "georgia";
+  font-size: 1rem;
+  font-style: italic;
+}
+
+
+.spacersection{
+  width: 100%;
+  height: 30%;
+ background: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  
+}
+
+.spacerline{
+  width: 80%;
+  height: 0.2rem;
+  background: red;
+  border-radius: 3rem;
+  
+}
+    
+
+
+
+
+ 
+/* Footer navigator styling */
+.footer-navigator{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn{
+  width: 25%;
+  height: 7rem;
+  background: #1F1F1F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border: 0;
+  transition: 1s;
+  outline:0;
+  font-family: "Turnpike";
+  color: white;
+  font-size: 1rem;
+  margin: 0.3rem;
+  padding-right: 2rem;
+}
+
+.btn-2{
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+.smallnavtext{
+  margin-top: -1rem;
+}
+
+
+.largenavtext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  margin-top: 1rem;
+ 
+}
+
+
+.smallnavtext p{
+font-family: "georgia";
+font-style: italic;
+}
+
+.btn:hover{
+  background: #BF4242;
+}
+
+
+.btn img{
+  height: 2rem;
+  margin: 1rem;
+}
+
+.previous{
+  transform: rotate(180deg);
+}
+
+
+/* ------Social share footer styling------- */
+
+.social-share{
+  width: 100%;
+  height:5rem;
+  background: #3E3E3E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+
+.social-share p{
+height: 5rem;
+display: flex;
+align-items: center;
+  color: white;
+  font-family: "georgia";
+  font-size: 1rem;
+  font-style: italic;
+  
+}
+
+.social-btn-container{
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.logo-container{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  transition: 1s;
+  
+}
+
+.logo-container:hover{
+  background: #BF4242;
+}
+
+
+.fb-icon{
+height: 1.1rem;
+}
+
+.tw-icon{
+  height: 1rem;
+  
+}
+
+
+
+
+  /* ---------Responsive code-------- */
+
+  @media only screen and (max-width: 1366px){
+
+   
+    .text-container h2 {
+      width: 80%;
+      font-size: 1.5rem;
+     line-height: 3rem;
+     
+    }
+
+    .author-1-blockquote{
+        width: 60%;
+    }
+
+    .btn{
+      width: 30%;
+      height: 6rem;
+      font-size: 0.8rem;
+      
+    }
+  
+  
+    .btn-2{
+      align-items: flex-start;
+      padding-left: 2rem;
+    }
+  
+
+
+   
+
+  }
+
+  @media only screen and (max-width: 1024px){
+
+
+    .red-line{
+      width: 0.3rem;
+      background: #BF4242;
+      height: 4.5rem;
+    }
+    
+    .logo-right-side h3{
+     
+      font-size: 2.5rem;
+      color: white;
+      font-family:"Montserrat";
+      font-weight: 800;
+      line-height: 2.5rem;
+      margin-left: 0.5rem;
+    }
+    
+    .october-text{
+      letter-spacing: 0.4rem;
+    }
+    
+    .crises-text{
+    letter-spacing: 1.2rem;
+    }
+    
+    
+    .logo-left-side h1{
+      font-size: 1.2rem;
+      color: white;
+      font-family:"Montserrat";
+      line-height: 1.7rem;
+      margin-right: 0.5rem;
+     
+    }
+   
+    .author-1-blockquote, .author-2-blockquote{
+        width: 100%;
+    }
+
+    .author-1-text, .author-2-text{
+        width: 70%;
+        
+    }
+
+    .btn{
+      width: 35%;
+    }
+   
+  }
+
+
+
+
+  @media only screen and (max-width: 768px){
+
+    .text-container h2 {
+        padding: 1rem;
+        width: 70%;
+        font-size: 1.5rem;
+       
+      }
+
+
+  .btn{
+    width: 45%;
+  }
+  }
+
+
+  @media only screen and (max-width: 700px){
+
+  .top-section{
+    
+    width: 100%;
+    height: 100vh;
+  }
+
+  .lm-logo{
+    height: 3rem;
+    width: 100%;
+  }
+
+  .lm-logo img{
+    height: 1rem;
+  }
+
+  
+  .red-line{
+    width: 0.3rem;
+    background: #BF4242;
+    height: 4.5rem;
+  }
+  
+  .logo-right-side h3{
+   
+    font-size: 2.5rem;
+    color: white;
+    font-family:"Montserrat";
+    font-weight: 800;
+    line-height: 2.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .october-text{
+    letter-spacing: 0.4rem;
+  }
+  
+  .crises-text{
+  letter-spacing: 1.2rem;
+  }
+  
+  
+  .logo-left-side h1{
+    font-size: 1.2rem;
+    color: white;
+    font-family:"Montserrat";
+    line-height: 1.7rem;
+    margin-right: 0.5rem;
+   
+  }
+
+  .text-container{
+   width: 100%;
+   height: 10rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   
+   
+ } 
+ 
+ .text-container h2 {
+   padding: 1rem;
+   width: 100%;
+   font-size: 1.2rem;
+   color: white;
+   font-family:"Turnpike";
+   line-height: 2rem;
+   text-align: center;
+ }
+
+ .footer-navigator{
+  flex-direction: column-reverse;
+  height: 50vh;
+}
+
+
+.btn{
+width: 95%;
+height: 5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 0.7rem;
+padding-right: 0rem;
+}
+
+.btn-2{
+align-items: center;
+padding-left: 0rem;
+}
+
+}
+
+
+
+  @media only screen and (max-width: 500px){
+
+    .red-line{
+        width: 0.3rem;
+        background: #BF4242;
+        height: 3.6rem;
+      }
+      
+      .logo-right-side h3{
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+      
+      .october-text{
+        letter-spacing: 0.3rem;
+      }
+      
+      .crises-text{
+      letter-spacing: 1.05rem;
+      }
+      
+      
+      .logo-left-side h1{
+        font-size: 1rem;
+        line-height: 1.3rem;
+        margin-right: 0.5rem;
+      }
+
+      .author-1-wrapper img, .author-2-wrapper img {
+      width: 70%;
+    }
+
+    .author-1-blockquote, .author-2-blockquote{
+        width: 100%;
+        height: 25rem;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .author-1-blockquote h2, .author-2-blockquote h2 {
+        font-family: "Turnpike";
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+       
+    }
+
+    .author-1-text, .author-2-text{
+        width: 100%;
+        padding: 0.8rem;
+    }
+    
+    .author-1-text p, .author-2-text p{
+        font-size: 1.1rem;
+     }
+
+     .spacerline{
+      width: 100%;
+    }
+
+    .footer-navigator{
+      flex-direction: column-reverse;
+      height: 50vh;
+    }
+
+
+.btn{
+  width: 95%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  padding-right: 0rem;
+}
+
+.btn-2{
+  align-items: center;
+  padding-left: 0rem;
+}
+
+    
+    
+
+  }

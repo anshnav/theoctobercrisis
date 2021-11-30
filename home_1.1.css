@@ -1,0 +1,1271 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+  width: 100%;
+}
+
+/* ---Font integration--- */
+
+@font-face {
+    font-family: "Turnpike";
+    src: url("fonts/Turnpike.ttf");
+    }
+
+
+
+
+
+   
+
+
+/* ----Progress Bar styling----- */
+    .bar-container{
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      height: 0.2rem;
+      background: black;
+      top:0;
+      z-index: 5;
+  }
+  
+  .percent {
+      position: absolute;
+      background: transparent;
+      height: 0.2rem;
+      width: 100%;
+      
+  }
+
+
+.fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #FADD00;
+  transition: background 0.15s ease;
+}
+
+
+/* ----End of Progress Bar styling----- */
+
+
+
+    
+
+  
+
+
+/* ---- top-section ---- */
+
+
+.top-section{
+
+   width: 100%;
+   height: auto;
+   background: #213436;
+   /* transform: skew(0deg, -10deg); */
+   
+ }
+
+ .award-container{
+  position: absolute;
+  width: 100%;
+  
+}
+
+
+.awardlogo{
+  height: 100px;
+  left:0;
+}
+
+
+ 
+ 
+/*------- Logo styles-------- */
+
+/* ----LM icon----- */
+
+.lm-logo{
+  background: #213436;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+  
+}
+
+.lm-logo img{
+height: 1.2rem;
+width: 2rem;
+/* background: black; */
+margin-left: 1rem;
+
+}
+
+
+/* ---------main logo--------- */
+
+.main-logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  transition: 1s;
+  opacity: 0;
+}
+
+.logo-right-side h3{
+  font-size: 3rem;
+  color: white;
+  font-family:"Montserrat";
+  font-weight: 800;
+  line-height: 3.2rem;
+  margin-left: 0.5rem;
+}
+
+.red-line{
+  width: 0.3rem;
+  background: #BF4242;
+  height: 5.5rem;
+}
+
+.october-text{
+  letter-spacing: 0.4rem;
+}
+
+.crises-text{
+  letter-spacing: 1.5rem;
+  }
+
+
+.logo-left-side h1{
+  font-size: 1.4rem;
+  color: white;
+  font-family:"Montserrat";
+  line-height: 2.2rem;
+  margin-right: 0.5rem;
+ 
+}
+
+
+
+/* -------Heading styles------- */
+
+ .text-container{
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+} 
+
+.text-container p {
+  width: 70%;
+  font-family: "georgia";
+  color: white;
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.big-text{
+  font-family:"Turnpike";
+}
+
+
+   /* ------Author styles ------*/
+
+   .author-name{
+     width: 100%;
+     padding: 0.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+  }
+
+   .author-name p{
+    font-family: "georgia";
+    color: white;
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+  }
+
+  .separator-container{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+  }
+
+  .separator{
+    width: 5rem;
+    height: 0.4rem;
+    background: #BF4242;
+    
+  }
+
+
+
+
+  /*---------animated arrows styling------*/
+
+.arrows{
+  position: absolute;
+width: 100%;
+height: 10rem;
+background: #213436;
+display: flex;
+justify-content: center;
+
+}
+
+
+.fancydivider{
+  fill: white;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+
+  .animated-arrows{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    
+  }
+  
+  
+  
+  .animated-arrows span {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  .animated-arrows  span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  .animated-arrows  span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+  }
+  .animated-arrows  span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+  }
+  
+  @-webkit-keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .animated-arrows-black span {
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+  }
+  
+/* ----End of arrows styling----- */
+
+
+ .section-1{
+  position: relative;
+  margin-top: 8rem;
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+  }
+
+  .section-2, .section-3, .section-4, .section-5, .section-6{
+    margin-top:0rem;
+  }
+
+
+  .text-section{
+    width: 50%;
+  }
+
+  .text-section p{
+    color: black;
+    font-family: "georgia";
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+    text-align: left;
+    
+  }
+
+  .img-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  .img-container img{
+    width: 100%;
+    align-self: center;
+  }
+
+
+
+.image-description{
+  width: 100%;
+  background: black;
+  border-left: 0.5rem solid #41AA9A;
+  padding: 0.7rem;
+  align-self: center;
+  
+}
+
+.image-description p{
+  color: white;
+  margin-left: 1.2rem;
+
+}
+
+.description-heading{
+  font-family:"Turnpike";
+  margin-bottom: 1rem;
+}
+
+.description-text{
+  font-family: "georgia";
+}
+
+
+
+/* --------Big image styling-------- */
+
+.container-2{
+ background-image: url('images/trudeau.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: flex-end;
+ margin-top: 5rem;
+ margin-bottom: 5rem;
+ 
+}
+
+.container-7{
+  background-image: url('images/paperboy-2.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: flex-end;
+ margin-top: 5rem;
+ margin-bottom: 5rem;
+}
+
+
+.lg-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  background: rgba(0, 0, 0, 0.733);
+  
+}
+
+.lg-text-wrapper-mobile{
+  display:none;
+}
+
+.lg-text-wrapper p{
+  font-family: "georgia";
+  color: white;;
+  width: 50%;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+
+
+
+.blockquote{
+  border-left: 0.5rem solid #41AA9A;
+  padding: 0.7rem;
+}
+
+.blockquote p{
+  font-size: 2rem;
+        color: black;
+        font-family:"Turnpike";
+        line-height: 2.5rem;
+}
+
+
+/* ----FLQ heading styling----- */
+
+.members-heading{
+  margin-top: 5rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.members-heading h2{
+  width: 20%;
+  font-family: "Turnpike";
+  color: black;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.left-line, .right-line{
+  height: 0.3rem;
+  width: 60%;
+  background: gray;
+}
+
+/* ----End of FLQ heading styling----- */
+
+
+.flq-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+
+.leftside-members{
+  width: 50%;
+}
+
+.rightside-members{
+  width: 50%;
+}
+
+.member-wrapper-left{
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+
+.member-wrapper-left img{
+  width: 13rem;
+ }
+ 
+ .member-wrapper-right img{
+   width: 13rem;
+  }
+
+.member-details-left{
+  width: 50%;
+  text-align: right;
+  padding: 1rem;
+}
+
+
+.member-details-left h4, .member-details-right h4{
+  font-family: "Turnpike";
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.member-details-left h5, .member-details-right h5 {
+  font-family: "georgia";
+  color: black;
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+
+.member-details-left p, .member-details-right p {
+  font-family: "georgia";
+  color: black;
+  width: 100%;
+  
+  
+}
+
+.member-wrapper-right{
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.member-details-right{
+  width: 50%;
+  text-align: left;
+  padding: 1rem;
+}
+
+
+
+
+
+    
+/* Footer navigator styling */
+
+.footer-navigator{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn{
+  width: 25%;
+  height: 7rem;
+  background: #1F1F1F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border: 0;
+  transition: 1s;
+  outline:0;
+  font-family: "Turnpike";
+  color: white;
+  font-size: 1rem;
+  margin: 0.3rem;
+  padding-right: 2rem;
+}
+
+.btn-2{
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+.smallnavtext{
+  margin-top: -1rem;
+}
+
+
+.largenavtext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  margin-top: 1rem;
+ 
+}
+
+
+.smallnavtext p{
+font-family: "georgia";
+font-style: italic;
+}
+
+.btn:hover{
+  background: #BF4242;
+}
+
+
+.btn img{
+  height: 2rem;
+  margin: 1rem;
+}
+
+.previous{
+  transform: rotate(180deg);
+}
+
+
+/* ------Social share footer styling------- */
+
+.social-share{
+  width: 100%;
+  height:5rem;
+  background: #3E3E3E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+
+.social-share p{
+height: 5rem;
+display: flex;
+align-items: center;
+  color: white;
+  font-family: "georgia";
+  font-size: 1rem;
+  font-style: italic;
+  
+}
+
+.social-btn-container{
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.logo-container{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  transition: 1s;
+  
+}
+
+.logo-container:hover{
+  background: #BF4242;
+}
+
+
+.fb-icon{
+height: 1.1rem;
+}
+
+.tw-icon{
+  height: 1rem;
+  
+}
+
+
+
+@media only screen and (max-width: 2600px){
+
+  .main-logo{
+    height: 10rem;
+  }
+
+.text-container{
+  height: 30rem;
+} 
+
+.text-container p {
+  width: 40%;
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 1366px){
+
+
+
+.main-logo{
+    height: auto;
+  }
+
+.text-container{
+  height: auto;
+} 
+
+.text-container p {
+  width: 70%;
+}
+  
+
+.blockquote p{
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+}
+
+
+.lg-text-wrapper{
+  width: 100%;
+  height: 13rem;
+}
+
+.lg-text-wrapper p{
+  font-family: "georgia";
+  color: white;;
+  width: 70%;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.3rem;
+}
+
+.btn{
+  width: 30%;
+  height: 6rem;
+  font-size: 0.8rem;
+  
+}
+
+.btn-2{
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+
+  
+.main-logo{
+    height: 10rem;
+  }
+
+.text-container{
+  height: 40rem;
+} 
+
+.text-container p {
+  width: 70%;
+}
+  
+
+  
+.container-2{
+  
+    width: 100%;
+  height: 100vh;
+  background-position: 50% 50%;
+    
+}
+
+.container-7{
+    width: 100%;
+    height: 100vh;
+    background-position: 50% 50%;
+}
+
+
+   .flq-container{
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+  }
+
+  .leftside-members{
+    width: 100%;
+  }
+
+  .rightside-members{
+    width: 100%;
+  }
+
+ .member-wrapper-left{
+  padding: 5rem;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ height: 25rem;
+ 
+}
+
+.member-wrapper-right{
+ padding: 5rem;
+width: 100%;
+display: flex;
+ flex-direction: row;
+height: 25rem;
+}
+
+
+
+.member-wrapper-left img{
+width: 13rem;
+}
+
+.member-wrapper-right img{
+ width: 13rem;
+}
+
+.member-details-left, .member-details-right{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ text-align: left;
+ padding: 1rem;
+}
+
+.member-details-left p, .member-details-right p {
+ width: 100%;
+}
+
+.btn{
+  width: 35%;
+}
+
+.awardlogo{
+  height: 80px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+ 
+  
+.main-logo{
+    height: auto;
+  }
+
+.text-container{
+  height: 40rem;
+} 
+
+.text-container p {
+  width: 100%;
+}
+
+.text-section{
+  width: 100%;
+  padding: 2rem;
+}
+
+.img-container{
+  width: 100%;
+  padding: 0rem;
+ 
+}
+
+
+.image-description{
+  width: 100%;
+  margin-right:0;
+}
+
+.image-description p{
+  color: white;
+  margin-right:0;
+  width: 100%;
+  
+}
+
+.container-2{
+  
+  width: 100%;
+height: 70vh;
+background-position: 50% 50%;
+  
+ }
+
+ .container-7{
+  width: 100%;
+  height: 70vh;
+  background-position: 0% 50%;
+ }
+
+
+ 
+ .lg-text-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 15rem;
+   
+   
+ }
+ 
+ .lg-text-wrapper p{
+  padding: 1rem;
+   font-family: "georgia";
+   color: white;;
+   width: 100%;
+   font-size: 1.3rem;
+   text-align: center;
+   line-height: 2rem;
+ }
+
+ 
+
+ 
+
+
+ .flq-container{
+  width: 100%;
+  height: auto;
+  
+}
+
+
+.leftside-members{
+  width: 100%;
+}
+
+.rightside-members{
+  width: 100%;
+}
+
+ .member-wrapper-left{
+   padding: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 25rem;
+  
+  
+}
+
+.member-wrapper-right{
+  padding: 5rem;
+ width: 100%;
+ display: flex;
+  flex-direction: row;
+ height: 25rem;
+ 
+ 
+}
+
+.members-heading h2{
+  width: 70%;
+}
+
+
+
+.member-wrapper-left img{
+ width: 13rem;
+}
+
+.member-wrapper-right img{
+  width: 13rem;
+ }
+
+.member-details-left, .member-details-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1rem;
+}
+
+.member-details-left p, .member-details-right p {
+  width: 100%;
+}
+
+.btn{
+  width: 45%;
+}
+
+.awardlogo{
+  height: 50px;
+
+}
+ 
+
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+
+.top-section{
+  height: auto;
+}
+
+
+.lm-logo{
+  height: 3rem;
+  width: 100%;
+}
+
+.lm-logo img{
+  height: 1rem;
+}
+
+
+  .main-logo{
+    height: 10rem;
+  }
+
+.text-container{
+  height: auto;
+  padding: 2rem;
+} 
+
+.text-container p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+  
+
+  .red-line{
+    width: 0.3rem;
+    background: #BF4242;
+    height: 3.6rem;
+  }
+  
+  .logo-right-side h3{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  
+  .october-text{
+    letter-spacing: 0.3rem;
+  }
+  
+  .crises-text{
+  letter-spacing: 1.05rem;
+  }
+  
+  
+  .logo-left-side h1{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-right: 0.5rem;
+  }
+
+
+
+
+    .image-description{
+      margin-right: 0rem;
+    }
+
+    .image-description p{
+      margin-left: 0rem;
+    }
+
+
+    .container-2{
+     width: 100%;
+    height: 50vh;
+    background-position: 50% 50%;
+      
+     }
+    
+     .container-7{
+      width: 100%;
+      height: 50vh;
+      background-position: 0% 50%;
+     }
+    
+     
+     .lg-text-wrapper{
+       display: none;
+     }
+     
+    
+     .lg-text-wrapper-mobile{
+       margin-top: -5rem;
+       display:block;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: auto;
+       background: rgb(0, 0, 0);
+     }
+
+     .lg-text-wrapper-mobile p{
+       font-family: "georgia";
+       color: white;
+      padding: 1rem;
+       width: 100%;
+       font-size: 1.2rem;
+       text-align: center;
+       line-height: 1.8rem;
+     }
+
+
+    .blockquote p{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+
+
+    .flq-container{
+      width: 100%;
+      height: 100%;
+      display: block;
+      
+    }
+
+
+
+    .leftside-members{
+      width: 100%;
+    }
+  
+    .rightside-members{
+      width: 100%;
+    }
+
+
+ .member-wrapper-left{
+  padding: 1rem;
+ width: 100%;
+ display: block;
+ text-align: center;
+ height: 35rem;
+ 
+
+ 
+}
+
+.member-wrapper-right{
+ padding: 1rem;
+width: 100%;
+display: block;
+text-align: center;
+height: 35rem;
+
+
+}
+
+
+
+.member-wrapper-left img{
+width: 13rem;
+}
+
+.member-wrapper-right img{
+ width: 13rem;
+}
+
+.member-details-left, .member-details-right{
+  width: 100%;
+ display: block;
+ text-align: center;
+ padding: 1rem;
+}
+
+.member-details-left p, .member-details-right p {
+ width: 100%;
+}
+
+.members-heading h2{
+  width: 70%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+
+.footer-navigator{
+  flex-direction: column-reverse;
+  height: 50vh;
+}
+
+
+.btn{
+width: 95%;
+height: 5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 0.7rem;
+padding-right: 0rem;
+}
+
+.btn-2{
+align-items: center;
+padding-left: 0rem;
+}
+
+.award-container{
+  position: relative;
+  width: 100%;
+}
+
+.awardlogo{
+  height: 60px;
+  left:0;
+}
+
+
+
+}
